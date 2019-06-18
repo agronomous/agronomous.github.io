@@ -1,1 +1,0 @@
-# agronomous.github.io
