@@ -19,6 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <!--// css -->
+<link rel="stylesheet" href="css/lightbox.css">
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
@@ -55,13 +56,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h1><a href="index.html">Agronomous</a></h1>
 					</div>
 				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="index.html">Inicio</a></li>
+							<li><a href="index.html" class="hvr-sweep-to-bottom">Inicio</a></li>
 							<li><a href="about.html" class="hvr-sweep-to-bottom">About</a></li>
-							<li><a href="gallery.html" class="hvr-sweep-to-bottom">Gallery</a></li>
+							<li class="active"><a href="gallery.html" class="hvr-sweep-to-bottom">Gallery</a></li>
 							<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codes<span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a class="hvr-sweep-to-bottom" href="icons.html">Icons</a></li>
@@ -78,162 +80,141 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //header -->
 	<!-- banner -->
-	<div class="banner">
+	<div class="banner about-banner">
 		<div class="container">
-			<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>	
-								<div class="banner_text">
-									<h3>Lorem ipsum dolor sit</h3>
-									<div class="w3ls-line"> </div>
-									<p>Farming Company</p>
-									<div class="w3-button">
-										<a href="single.html" class="btn btn-1 btn-1b">Read More</a>
-									</div>
-								</div>
-							</li>
-							<li>	
-								<div class="banner_text">
-									<h3>Nam semper nisi enim</h3>
-									<div class="w3ls-line"> </div>
-									<p>Farming Company</p>
-									<div class="w3-button">
-										<a href="single.html" class="btn btn-1 btn-1b">Read More</a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-			</section>
-			<!-- flexSlider -->
-			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-			<script defer src="js/jquery.flexslider.js"></script>
-			<script type="text/javascript">
-				$(window).load(function(){
-					$('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						$('body').removeClass('loading');
-						}
-					});
-				});
-			</script>
-			<!-- //flexSlider -->
+			<h2>Our Gallery</h2>
+			<div class="agileits-line"> </div>
 		</div>
 	</div>
 	<!-- //banner -->
-	<!-- services -->
-	<div class="services">
+	<!-- gallery -->
+	<div class="gallery">
 		<div class="container">
-			<div class="services-main">
-				<div class="services-heading">
-					<h2>services</h2>
-					<div class="agileits-line"> </div>
+			<div class="gallery-grids">
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g1.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g1.jpg" alt="" />
+								<figcaption>
+									<h3>Maecenas <span>lacus</span></h3>
+									<p> Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
+					</div>
 				</div>
-				<div class="services-bottom">
-					<div class="services-grid">
-						<div class="col-md-6 services-grid-left">
-							<div class="services-icon"><i class="fa fa-envira" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Nunc vitae temporg</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="col-md-6 services-grid-right">
-							<img src="images/3.jpg" alt="" />
-						</div>
-						<div class="clearfix"> </div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g2.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g2.jpg" alt="" />
+								<figcaption>
+									<h3>Aliquam <span>porta</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
 					</div>
-					<div class="services-grid">					
-						<div class="col-md-6 services-grid-right ulta-grid">
-							<img src="images/4.jpg" alt="" />
-						</div>
-						<div class="col-md-6 services-grid-left ulta-grid">
-							<div class="services-icon"><i class="fa fa-magnet" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Lorem Ipsum</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g3.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g3.jpg" alt="" />
+								<figcaption>
+									<h3>Proin <span>mattis</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>		
+							</a>
+						</figure>
 					</div>
-					<div class="services-grid">
-						<div class="col-md-6 services-grid-left">
-							<div class="services-icon"><i class="fa fa-cog" aria-hidden="true"></i></div> 
-							<div class="services-text">
-								<h4>Excepteur Sint</h4>
-								<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="col-md-6 services-grid-right">
-							<img src="images/6.jpg" alt="" />
-						</div>
-						<div class="clearfix"> </div>
+				</div>
+							
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g4.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g4.jpg" alt="" />
+								<figcaption>
+									<h3>Duis <span>rhoncus</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
+					</div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g5.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g5.jpg" alt="" />
+								<figcaption>
+									<h3>Curabitur <span>quam</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
+					</div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g6.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g6.jpg" alt="" />
+								<figcaption>
+									<h3>Maecenas <span>lacus</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>		
+							</a>
+						</figure>
+					</div>
+				</div>
+				
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g7.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g7.jpg" alt="" />
+								<figcaption>
+									<h3>Maecenas <span>lacus</span></h3>
+									<p> Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
+					</div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g1.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g1.jpg" alt="" />
+								<figcaption>
+									<h3>Aliquam <span>porta</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>	
+							</a>
+						</figure>
+					</div>
+				</div>
+				<div class="col-md-4 gallery-grid">
+					<div class="grid">
+						<figure class="effect-roxy">
+							<a class="example-image-link" href="images/g2.jpg" data-lightbox="example-set" data-title="In lacinia pharetra ipsum vel dapibus. Ut vitae tristique nisi, mattis pellentesque elit. Proin mollis sed nisi ac sodales.">
+								<img src="images/g2.jpg" alt="" />
+								<figcaption>
+									<h3>Proin <span>mattis</span></h3>
+									<p>Aenean fermentum nisl ac imperdiet commodo</p>
+								</figcaption>		
+							</a>
+						</figure>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-	<!--services -->
-	<!-- services-bottom -->
-	<div class="text-grid">
-		<div class="container">
-			<h4>Improve your Farming..!</h4>
-			<p>Pellentesque non nibh ante. Cras hendrerit finibus eros eget elementum. Maecenas sed ultrices dui. Fusce id feugiat arcu. Vivamus sodales mauris sagittis sem tincidunt, vel pretium orci viverra. Nunc pretium, eros id aliquam cursus, tellus nisi gravida sapien, et eleifend ipsum erat eget nisl.</p>
-		</div>
-	</div>
-	<!-- //services-bottom -->
-	<!-- blog -->
-	<div class="blog">
-		<div class="container">
-			<div class="services-heading">
-				<h3>Our Blog</h3>
-				<div class="agileits-line"> </div>
-			</div>
-			<div class="agileinfo-blog-grids">
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/7.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Fusce nec quam vulputate</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/8.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Interdum et malesuada</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 wthree-blog">
-					<div class="w3-agileits-blog">
-						<div class="w3-agileits-blog-img">
-							<a href="single.html"><img src="images/9.jpg" alt="" /></a>
-						</div>
-						<div class="w3-agileits-blog-text">
-							<a href="single.html">Vivamus ornare convallis</a>
-							<p>Nunc vitae tempor dolor, sed euismod mauris. Vivamus ornare convallis tincidunt. Morbi orci leo, vulputate et aliquam nec, pulvinar sed nibh.</p>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //blog -->
+	<!-- //gallery -->
 	<!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -280,6 +261,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //footer -->
+	<script src="js/lightbox-plus-jquery.min.js"> </script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<!-- here stars scrolling icon -->
